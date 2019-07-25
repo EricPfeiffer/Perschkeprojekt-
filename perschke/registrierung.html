@@ -1,0 +1,46 @@
+<link rel="stylesheet" type="text/css" href="styleNoFooter.css">
+<script type="text/javascript">
+	jQuery(function(){
+		jQuery('#submitbtn').click(function(){
+			jQuery.post(
+				'handle_registrierung.php',
+				jQuery('#anmeldedaten').serialize(),
+				function(data){
+					if(data == 1) {
+						jQuery('main').load('loginformular.html');
+					} else {
+						jQuery('#registererror').empty();
+						jQuery('#registererror').append("Fehler bei der Registrierung. Versuchen Sie es noch einmal.");
+					}
+				},
+				'html'
+			);
+			
+		});
+		
+	});
+</script>
+
+	<form id="anmeldedaten" action="handle_registrierung.php">
+	<br>
+		<div class="input-group">
+        <div id="loginheader">
+		<h2 id="logintitle">Registrierung</h2>
+		</div>
+		<div id="loginbody">
+		<input type="text" required='' name="name" id="inputField">
+		<label alt='Benutzername' placeholder='Benutzername'></label>
+		
+		<input type="password" required='' name="pwd1" id="inputField">
+		<label alt='Passwort' placeholder='Passwort'></label>
+	
+		<input type="password" required='' name="pwd2" id="inputField">
+		<label alt='Passwort (Bestätigung)' placeholder='Passwort (Bestätigung)'></label>
+		
+		<input id="submitbtn" type="button" value="Registrieren" style="margin-top:20px">
+	</form>
+	
+
+	<div id="registererror" class="error"></div>
+
+</div>	

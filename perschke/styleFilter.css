@@ -1,0 +1,204 @@
+﻿@media screen and (max-width: 700px) {
+    tr {
+        float: left;
+        width: 100%;
+        margin-bottom: 2em;
+    }
+
+    tbody {
+        width: 80%;
+    }
+}
+
+@media screen and (max-width: 700px) {
+  td {
+        padding: 0;
+       
+    }
+
+ 
+
+    table, td, tr, th {
+      
+        border-collapse: collapse;
+        text-align: left;
+    }
+
+
+
+    tr {
+        display: table-row;
+        vertical-align: inherit;
+        border-color: inherit;
+    }
+
+
+    table {
+        border-collapse: separate;
+        border-spacing: 2px;
+    }
+
+    .taskheader {
+        width: 0px;
+        visibility: hidden;
+        height: 0px;
+        margin: 0px;
+        position: absolute;
+    }
+
+    tbody {
+        width: 360px;
+    }
+
+    td {
+        float: left;
+        width: 100%;
+        padding-left: 5px;
+        padding-top: 5px;
+        padding-bottom: 5px;
+    }
+
+        td::before {
+            content: attr(data-label);
+            word-break: break-word;
+            float: left;
+        }
+
+    .tableinhalt {
+        width: 97%;
+    }
+}
+
+    .btnfilter
+
+{
+    height: 50px;
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 18px;
+    background: #46B6AC;
+    padding: 10px 10px 10px 10px;
+    border: solid #9e0000 0px;
+    text-decoration: none;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin-left: 2px;
+    float: right;
+    transition: 0.2s ease;
+}
+
+.btnfilter:hover {
+    background: #05a69e;
+    background-image: -webkit-linear-gradient(top, #05a69e, #038c85);
+    background-image: -moz-linear-gradient(top, #05a69e, #038c85);
+    background-image: -ms-linear-gradient(top, #05a69e, #038c85);
+    background-image: -o-linear-gradient(top, #05a69e, #038c85);
+    background-image: linear-gradient(to bottom, #05a69e, #038c85);
+    text-decoration: none;
+}
+#mostImportant {
+    height: 50px;
+    -webkit-border-radius: 9;
+    -moz-border-radius: 9;
+    border-radius: 9px;
+    color: #ffffff;
+    font-size: 18px;
+    background: #46B6AC;
+    padding: 10px 20px 10px 20px;
+    border: solid #9e0000 0px;
+    text-decoration: none;
+    font-weight: bold;
+    width: auto;
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    margin:10px;
+    transition: 0.2s ease;
+}
+
+    #mostImportant:hover {
+        background: #05a69e;
+        background-image: -webkit-linear-gradient(top, #05a69e, #038c85);
+        background-image: -moz-linear-gradient(top, #05a69e, #038c85);
+        background-image: -ms-linear-gradient(top, #05a69e, #038c85);
+        background-image: -o-linear-gradient(top, #05a69e, #038c85);
+        background-image: linear-gradient(to bottom, #05a69e, #038c85);
+        text-decoration: none;
+    }
+    #searchForTitle{
+        margin:10px;
+        width:340px;
+
+    }
+	#searchForStatus{
+        margin:10px;
+        width:340px;
+
+    }
+
+    h1{margin:10px;}
+
+@media screen and (max-width :2000px) {
+
+    footer {
+        height: 50px;
+        background-color: #fff;
+        -webkit-box-shadow: 0px 13px 40px 8px rgba(0,0,0,0.75);
+        -moz-box-shadow: 0px 13px 40px 8px rgba(0,0,0,0.75);
+        box-shadow: 0px 13px 40px 8px rgba(0,0,0,0.75);
+        position: fixed;
+        padding: 10px;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width :550px) {
+    .btnfilter {
+        height: 40px;
+        -webkit-border-radius: 9;
+        -moz-border-radius: 9;
+        border-radius: 9px;
+        color: #ffffff;
+        font-size: 9px;
+        background: #46B6AC;
+        padding: 10px 10px 10px 10px;
+        border: solid #9e0000 0px;
+        text-decoration: none;
+        font-weight: bold;
+        width: auto;
+        text-align: center;
+        border: none;
+        cursor: pointer;
+        margin-left: 2px;
+        float: right;
+        transition: 0.2s ease;
+    }
+
+        .btnfilter:hover {
+            background: #05a69e;
+            background-image: -webkit-linear-gradient(top, #05a69e, #038c85);
+            background-image: -moz-linear-gradient(top, #05a69e, #038c85);
+            background-image: -ms-linear-gradient(top, #05a69e, #038c85);
+            background-image: -o-linear-gradient(top, #05a69e, #038c85);
+            background-image: linear-gradient(to bottom, #05a69e, #038c85);
+            text-decoration: none;
+        }
+
+
+
+}
+.Platzhalter {
+    height:75px;
+    width: 200px;
+    visibility: hidden;
+}

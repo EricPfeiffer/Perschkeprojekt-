@@ -1,0 +1,215 @@
+#placeholderfooter{
+		visibility: hidden;
+	}
+
+.loeschenbtn{
+	-webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  height: 50px;
+  background: #683ab7;
+  padding: 10px 20px 10px 20px;
+  border: solid #9e0000 0px;
+  text-decoration: none;
+    width: auto;
+    text-align: center;
+ 
+    border: none;
+    font: 500 16px/1 "Poppins", sans-serif;
+    cursor: pointer;
+    
+ 
+    transition: 0.2s ease;
+ 
+}
+.loeschenbtn:hover {
+background: #8854f0;
+  background-image: -webkit-linear-gradient(top, #8854f0, #7d46db);
+  background-image: -moz-linear-gradient(top, #8854f0, #7d46db);
+  background-image: -ms-linear-gradient(top, #8854f0, #7d46db);
+  background-image: -o-linear-gradient(top, #8854f0, #7d46db);
+  background-image: linear-gradient(to bottom, #8854f0, #7d46db);
+  text-decoration: none;
+}
+.submitbtn4 {
+	height:50px;
+ -webkit-border-radius: 9;
+  -moz-border-radius: 9;
+  border-radius: 9px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  background: #46B6AC;
+  padding: 10px 20px 10px 20px;
+  border: solid #9e0000 0px;
+  text-decoration: none;
+  
+    width: auto;
+    text-align: center;
+    
+    border: none;
+    font: 500 16px/1 "Poppins", sans-serif;
+   
+    cursor: pointer;
+    
+    
+    transition: 0.2s ease;
+ 
+}
+
+.submitbtn4:hover {
+background: #05a69e;
+  background-image: -webkit-linear-gradient(top, #05a69e, #038c85);
+  background-image: -moz-linear-gradient(top, #05a69e, #038c85);
+  background-image: -ms-linear-gradient(top, #05a69e, #038c85);
+  background-image: -o-linear-gradient(top, #05a69e, #038c85);
+  background-image: linear-gradient(to bottom, #05a69e, #038c85);
+  text-decoration: none;
+}
+
+.streifen{
+	height: 5px;
+	background-color: #673ab7;
+}
+.streifen2{
+	height: 5px;
+	background-color: #46B6AC;
+}
+
+.taskliste{
+	margin-left: 20px;
+	margin-top:20px;
+	float:left;
+	width: 32%;
+	min-width:300px;
+	
+    overflow: hidden;
+    display: grid;
+	position: relative;
+    box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
+    border-radius: 10px;
+    transition: .2s ease;
+    
+}
+.taskliste2{
+	margin: 10px;
+	float:left;
+	width: 25%;
+	min-width: 400px;
+	max-width: 450px;
+	min-height:325px;
+	max-height:405px;
+}
+
+.tasklistheader{
+	height:10%;
+	min-height: 200px;
+	max-height: 300px;
+	background-color:#46B6AC;
+	position: relative;
+	padding: 25px;
+}
+.tasklistheader2{
+	height:10%;
+	min-height: 200px;
+	max-height: 300px;
+	background-color:#673ab7;
+	position: relative;
+	padding: 25px;
+}
+
+.tasklisttitle{
+	position: absolute;
+bottom: 0;
+color: white;
+
+}
+
+.tasklistfooter{
+	padding:10px;
+	min-height: 50px;
+	max-height:100px;
+	position: relative;
+}
+#submitbtn2 {
+	background-color:#673ab7;
+	color:white;
+	display:block;
+	height: 60px;
+	width: 60px;
+	border-radius: 50%;
+	border: 1px solid white;
+	font-size: 37.5pt;
+	cursor: pointer;
+position:absolute;
+    bottom: 0;
+	float:right;
+	margin-left:43%;
+  
+}
+#tasklistname2{
+	float:right;
+	
+}
+
+#anmeldedaten2{
+	position:relative;
+    
+    display: flex;
+    
+    justify-content: center;
+}
+
+@media screen and (max-width :2000px)  {
+    .taskliste {
+        width: 31%;
+		min-width:300px;
+    
+    }
+    #placeholderfooter {
+        visibility: hidden;
+    }
+	
+	
+}
+
+@media screen and (max-width : 950px)  {
+	.taskliste{
+		width:45%;
+		
+	}
+	
+	
+}
+@media screen and (max-width : 650px) {
+	  .taskliste{
+		width:90%;
+		
+	}
+}
+@media screen and (max-width : 550px) {
+   
+
+    .taskliste{
+		width:90%;
+		
+	}
+	#placeholderfooter{
+		visibility: visible;
+	}
+    
+
+}
+
+@media screen and (max-width : 500px)  {
+	.taskliste{
+		width:90%;
+		
+	}
+   
+}
+
+

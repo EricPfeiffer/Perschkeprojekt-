@@ -1,0 +1,114 @@
+
+
+
+.task{
+    
+	margin-left:30px;
+	margin-bottom:30px;
+    
+float:left;
+	width: auto;
+	
+    overflow: hidden;
+    display: grid;
+	position: relative;
+    box-shadow: 0 3px 15px rgba(51, 51, 51, 0.2);
+    border-radius: 10px;
+    transition: .2s ease;
+}
+
+.tasktitel {
+    height: auto;
+    background-color: #46B6AC;
+    position: relative;
+    padding: 25px;
+    word-break: break-word;
+}
+.tasktitelname{
+
+color: white;
+}
+.taskstreifen{
+		height: 5px;
+	background-color: #673ab7;
+}
+
+.taskbeschreibung{
+	padding:25px;
+}
+
+.taskaside{
+	padding-left: 25px;
+	padding-right: 25px;
+	padding-bottom: 25px;
+
+	display: flex;
+    
+    justify-content: center;
+	
+}
+
+
+
+.taskprio{
+	float:left;
+	text-align:center;
+	
+}
+.taskdate{
+	float:left;
+	margin-left:10%;
+	margin-right:10%;
+	text-align:center;
+}
+.taskstatus{
+	float:left;
+	text-align:center;
+}
+
+.Footertitel{
+	color: #BDBDBD;
+	font-size: 12px;
+	margin-bottom:-5px;
+}
+
+@media screen and (max-width :1500px) {
+    .task {
+        width: 45%;
+    }
+    main {
+        width: 100%
+    }
+
+
+}
+
+
+
+
+
+@media screen and (max-width : 700px) {
+    .task {
+        width: 90%;
+        height:auto;
+        
+    }
+    main{width:100%}
+}
+
+@media screen and (max-width : 360px) {
+    .task {
+        width: 80%;
+        height: auto;
+    }
+
+    main {
+        width: 100%
+    }
+}
+
+footer{visibility:hidden;}
+h1 {
+    font-size: 30pt;
+    margin: 10px;
+}

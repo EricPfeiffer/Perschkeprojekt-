@@ -1,0 +1,49 @@
+<link rel="stylesheet" type="text/css" href="styleNoFooter.css">
+<script type="text/javascript">
+    jQuery(function () {
+
+        jQuery('#registrieren').click(function () {
+            jQuery('main').load('registrierung.html');
+        });
+
+        jQuery('#submitbtn').click(function () {
+            jQuery.post(
+                'handle_login.php',
+                jQuery('#logindaten').serialize(),
+                function (data) {
+                    if (data == 1) {
+                        jQuery('main').load('addlist.php');
+                        loadNavi();
+                    }
+                    else {
+                        jQuery('#loginerror').empty();
+                        jQuery('#loginerror').append("Fehler bei der Anmeldung. Versuchen Sie es noch einmal.");
+                    }
+                },
+                'html'
+            );
+
+        });
+
+    });
+</script>
+<form id="logindaten" action="" method="post">
+    <br>
+    <div class="input-group">
+        <div id="loginheader">
+            <h2 id="logintitle">Login</h2>
+        </div>
+        <div class="streifen"></div>
+        <div id="loginbody">
+            <input required='' type='text' name="name" id="inputField">
+            <label alt='Benutzername' placeholder='Benutzername'></label>
+
+            <input required='' type='password' name="pwd" id="inputField">
+            <label alt='Passwort' placeholder='Passwort'></label>
+            <br>
+            <button id="submitbtn" name="submitbtn"> Sign in </button>
+</form>
+<button id="registrieren" name="registireren">Create account</button>
+        </div>
+		</div>
+<div id="loginerror" class="error"></div>
